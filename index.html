@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>The Super Mario Bross</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <section class="conteudo">
+        <video src="assets/background-video.mp4" autoplay loop muted class="conteudo-video"></video>
+       
+        <div class="conteudo-item">
+            <header class="cabecalho">
+                <nav class="menu">
+                    <a href="#" class="menu-item-imagem">
+                        <img src="assets/logo-cap.png" alt="Logo do site - Chapeu do meio" >
+                    </a>
+                    <a href="#" class="menu-item">Home</a>
+                    <a href="#" class="menu-item">Story</a>
+                    <a href="#" class="menu-item">Wallpapers</a>
+                    <a href="#" class="menu-item">Trailler</a>
+                </nav>
+    
+                <aside class="redeSocial">
+                    <a href="#" class="redeSocial-item"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="redeSocial-item"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="redeSocial-item"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="redeSocial-item"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="redeSocial-item" ><i class="bi bi-youtube"></i></a>
+                </aside>
+
+                <div class="navMenu" onclick="menuShow()">
+                    <div class="navMenu-item"></div>
+                    <div class="navMenu-item"></div>
+                    <div class="navMenu-item"></div>
+                </div>
+            </header>
+
+            <main class="secao-conteudo">
+                <article class="escrito">
+                    <div class="escrito-logo">
+                        <img src="assets/logo-movie.png" alt="Logo do filme do Mario"  data-aos="fade-down-right"  data-aos-duration="800" data-aos-easing="ease-in-out" >
+                    </div>
+                    <p class="escrito-paragrafo" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">Um dia, Mario e Luigi vão para no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, Bowser, que vai fazer de tudo para conseguir reinar todos os lugares. É então quando Luigi é raptado por Bowser e o usa para procurar Mario, o único capaz de deter o Koopa e reestabelexcer a paz.</p>
+                    <aside class="escrito-botao">
+                        <a href="#" class="botao  trailer" onclick="trailerShow()">Assistir o Trailer</a>
+                        <a href="#" class="botao  ingresso">Comprar ingresso</a>
+                    </aside>
+                </article>
+
+                <article class="imagem">
+                    <img src="assets/mario-and-luigi.png" alt="Imagem ilustrativa do Mario e Luigi" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
+                </article>
+            </main>
+        </div>
+    </section>
+
+    <section class="menuResponsivel" id="menu">
+        <article class="nav-responsivel">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">Story</a>
+            <a href="#" class="nav-item">Wallpapers</a>
+            <a href="#" class="nav-item">Trailler</a>
+        </article>
+
+        <article class="redeSocial">
+            <a href="#" class="rede-item"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="rede-item"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="rede-item"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="rede-item"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="rede-item"><i class="bi bi-youtube"></i></a>
+        </article>
+    </section>
+
+    <section class="secao-trailer" id="cardTrailer">
+        <article class="trailer-item">
+            <div class="icone-fechar" onclick="trailerShow()">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cDNkh5WybZo?si=LV-DtGyayJtAidz_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+      <script src="script/menu.js"></script>
+</body>
+</html>
