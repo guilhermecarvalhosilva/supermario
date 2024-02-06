@@ -1,5 +1,6 @@
 let menu = document.getElementById(`menu`)
-let card = document.getElementById(`cardTrailer`)
+let secaoCard = document.getElementById(`cardTrailer`)
+let card = document.getElementById(`card`)
 
 
 function menuShow() {
@@ -7,5 +8,6 @@ function menuShow() {
 }
 
 function trailerShow() {
+    secaoCard.classList.toggle(`ativo`)
     card.classList.toggle(`ativo`)
 }

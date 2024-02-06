@@ -213,20 +213,20 @@
 
 .secao-trailer {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.727));
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     top: 0px ;
     left: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 3;
     display: none;
 }
 
 .secao-trailer > .trailer-item {
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.727));
     max-width: 800px;
     width: 90%;
@@ -235,6 +235,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    display: none;
 }
 
 .trailer-item > .icone-fechar {
@@ -251,9 +252,16 @@
     width: 80%;
 }
 
-.secao-trailer.ativo {
+.trailer-item.ativo {
     display: flex;
 }
+
+.secao-trailer.ativo {
+    display: flex;
+
+}
+
+
 
 
 @media (max-width: 1150px) {
